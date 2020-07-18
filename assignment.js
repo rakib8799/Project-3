@@ -8,11 +8,11 @@ function feetToMile(feet) {
     return mile;
   }
 }
-var feetFromMile = feetToMile(50000);
-if (feetFromMile == -1) {
+var totalMile = feetToMile(50000);
+if (totalMile == -1) {
   console.log('Feet can not be negative.You have to put positive number.');
 } else {
-  console.log(feetFromMile);
+  console.log(totalMile);
 }
 
 // Problem-2
@@ -58,20 +58,20 @@ if (brick == -1) {
 }
 
 // Problem-4
-var friendName;
-function tinyFriend(friendName) {
-  var friend1 = friendName[0].length;
-  var friend2 = friendName[1].length;
-  var friend3 = friendName[2].length;
-  var friend4 = friendName[3].length;
-  var friend5 = friendName[4].length;
+var friendsName;
+function tinyFriend(friendsName) {
+  var friend1 = friendsName[0].length;
+  var friend2 = friendsName[1].length;
+  var friend3 = friendsName[2].length;
+  var friend4 = friendsName[3].length;
+  var friend5 = friendsName[4].length;
   var minLengthName = Math.min(friend1, friend2, friend3, friend4, friend5);
   return minLengthName;
 }
 var friend = tinyFriend(['Sakib', 'Ome', 'Rakibul', 'Asad', 'Mehedi']);
-var friend2 = ['Sakib', 'Ome', 'Rakibul', 'Asad', 'Mehedi'];
-for (var i = 0; i < friend2.length; i++) {
-  if (friend2[i].length == friend) {
-    console.log(friend2[i]);
+var allFriends = ['Sakib', 'Ome', 'Rakibul', 'Asad', 'Mehedi'];
+for (var i = 0; i < allFriends.length; i++) {
+  if (allFriends[i].length == friend) {
+    console.log(allFriends[i]);
   }
 }
