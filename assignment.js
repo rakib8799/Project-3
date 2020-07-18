@@ -38,13 +38,13 @@ if (totalWood == -1) {
 var floor;
 function brickCalculator(floor) {
   if (floor >= 1 && floor <= 10) {
-    var brickForFirstTen = 10000 * floor * 15;
+    var brickForFirstTen = 1000 * 15;
     return brickForFirstTen;
   } else if (floor >= 11 && floor <= 20) {
-    var brickForSecondTen = 10000 * floor * 12;
+    var brickForSecondTen = 1000 * 12;
     return brickForSecondTen;
   } else if (floor > 20) {
-    var brickForLastAll = 10000 * floor * 10;
+    var brickForLastAll = 1000 * 10;
     return brickForLastAll;
   } else {
     return -1;
